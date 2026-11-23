@@ -33,5 +33,5 @@ jobs:
       - name: Copiar mis archivitos
         run: |
           rm -R /var/www/html/*
-          cp ./* /var/www/html/
+          cp ./* -R /var/www/html/
           
