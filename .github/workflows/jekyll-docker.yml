@@ -25,6 +25,7 @@ jobs:
         run: npm test
 
   despliegue:
+    needs: test
     runs-on: self-hosted
 
     steps:
