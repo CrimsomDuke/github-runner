@@ -2,7 +2,7 @@ name: mi-server-runner
 
 on:
   push:
-    branches: [ "main"] 
+    branches: [ "master"] 
 
 jobs:
   despliegue:
