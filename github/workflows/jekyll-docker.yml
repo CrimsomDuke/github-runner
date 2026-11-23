@@ -1,0 +1,17 @@
+name: mi-server-runner
+
+on:
+  push:
+    branches: [ "main"] 
+
+jobs:
+  despliegue:
+    runs-on: self-hosted
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: Copiar mis archivitos
+        run: |
+          rm -R /var/www/html/*
+          cp ./* /var/www/html/
+          
