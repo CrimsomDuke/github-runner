@@ -1,0 +1,23 @@
+{
+  "name": "ubuntu-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CrimsomDuke/github-runner.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CrimsomDuke/github-runner/issues"
+  },
+  "homepage": "https://github.com/CrimsomDuke/github-runner#readme",
+  "devDependencies": {
+    "vitest": "^5.1.1"
+  }
+}

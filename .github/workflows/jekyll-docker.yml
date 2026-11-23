@@ -5,6 +5,25 @@ on:
     branches: [ "master"] 
 
 jobs:
+
+  test:
+    runs-on: self-hosted
+
+    steps:
+      - name: Checkout del repositorio
+        uses: actions/checkout@v4
+       
+      - name: instalar node
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+      
+      - name: instalar dependencias
+        run: npm install
+
+      - name: Ejecutar pruebas
+        run: npm test
+
   despliegue:
     runs-on: self-hosted
 
